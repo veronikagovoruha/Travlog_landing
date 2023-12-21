@@ -1,0 +1,23 @@
+@import "fonts";
+
+//utils styles
+@import "utils/mixins";
+@import "utils/variables";
+
+//base styles
+@import "base/common";
+@import "base/container";
+
+//components
+@import "components/header";
+@import "components/hero";
+@import "components/partners";
+@import "components/services";
+@import "components/destination";
+@import "components/point";
+@import "components/features";
+@import "components/reviews";
+@import "components/subscribe";
+@import "components/footer";
+
+/*# sourceMappingURL=main.scss.map */
