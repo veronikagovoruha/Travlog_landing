@@ -1,3 +1,59 @@
+@font-face {
+  font-family: "CircularStd-Black";
+  src: url("../fonts/CircularStd-Black.woff") format("woff"), url("../fonts/CircularStd-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CircularStd-Bold";
+  src: url("../fonts/CircularStd-Bold.woff") format("woff"), url("../fonts/CircularStd-Bold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CircularStd-Book";
+  src: url("../fonts/CircularStd-Book.woff") format("woff"), url("../fonts/CircularStd-Book.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Matter-Light";
+  src: url("../fonts/Matter-Light.woff") format("woff"), url("../fonts/Matter-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Matter-Medium";
+  src: url("../fonts/Matter-Medium.woff") format("woff"), url("../fonts/Matter-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Matter-Regular";
+  src: url("../fonts/Matter-Regular.woff") format("woff"), url("../fonts/Matter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Matter-SemiBold";
+  src: url("../fonts/Matter-SemiBold.woff") format("woff"), url("../fonts/Matter-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+:root {
+  /* fonts */
+  --main-font: "CircularStd-Bold", sans-serif;
+  --subtitle-font: "Inter", sans-serif;
+  /* text color */
+  --main-txt-cl: #191825;
+  --secondary-txt-cl: #F85E9F;
+  --subtitle--txt-cl: #191825;
+  --title-txt-cl: #FF5722;
+  --btn-txt-cl: #EEEEEE;
+  --transition-fast: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+}
+
 h1,
 h2,
 h3,
@@ -29,8 +85,8 @@ ul {
 }
 
 .section {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .title {
@@ -56,19 +112,7 @@ ul {
   transition: color var(--transition-fast), background-color var(--transition-fast);
 }
 
-.square {
-  position: absolute;
-  width: 50%;
-  height: 710px;
-  background-color: var(--hero-bg-color);
-  left: 50%;
-}
-
 @media only screen and (max-width: 834px) {
-  .square {
-    width: 85%;
-    left: 15%;
-  }
   .title {
     margin-bottom: 16px;
   }
