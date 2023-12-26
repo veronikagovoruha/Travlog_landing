@@ -1,0 +1,71 @@
+.hero{
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.hero__container{
+    display: flex;
+}
+
+.hero__left-link{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 160px;
+    font-family: var(--main-font);
+    @include fonts(normal, 700, 14px, 120%);
+    color: var(--secondary-txt-cl);
+
+    padding: 16px 32px;
+    border-radius: 100px;
+    background: #ffffff;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.07), 0px 34px 75px 0px rgba(0, 0, 0, 0.07), 0px 137px 137px 0px rgba(0, 0, 0, 0.06), 0px 308px 185px 0px rgba(0, 0, 0, 0.04), 0px 548px 219px 0px rgba(0, 0, 0, 0.01), 0px 856px 240px 0px rgba(0, 0, 0, 0.00);
+}
+
+.hero__title{
+    font-family: var(--main-font);
+    @include fonts(normal, 700, 69px, 120%);
+    color: #000000;
+
+    margin-top: 43px;
+    width: 414px;
+}
+
+.hero__title-pink{
+    color: var(--secondary-txt-cl);
+}
+
+.hero__subtitle{
+    font-family: var(--subtitle-font);
+    @include fonts(normal, 400, 18px, 160%);
+    color: var(--subtitle--txt-cl);
+
+    margin-top: 43px;
+    width: 414px;
+}
+
+.hero__btn{
+    margin-top: 43px;
+}
+
+.hero__btn-get{
+    margin-right: 16px;
+}
+
+.hero__btn-demo{
+    box-sizing: border-box;
+    display: flex;
+    padding: 16px 32px;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 100px;
+    border: 1px solid  #eeeeee;
+    background: #ffffff;
+}
+
+.hero__btn-text{
+    font-family: var(--main-font);
+    @include fonts(normal, 700, 14px, 120%);
+    color: var(--main-txt-cl);
+}

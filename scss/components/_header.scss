@@ -68,7 +68,6 @@
 }
 
 
-// @media only screen and (min-width: 834px) and (max-width: 1180px)
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .nav{
         display: none;
@@ -132,7 +131,8 @@
         transform: scale(0);
       }
 }
-// @media only screen and (min-width: 375px) and (max-width: 833px)
+
+
 @media only screen and (min-width: 320px) and (max-width: 768px){
     .header__container{
         flex-direction:  row-reverse;
