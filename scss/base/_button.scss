@@ -1,0 +1,16 @@
+.btn-purple{
+    font-family: var(--main-font);
+    @include fonts(normal, 700, 14px, 120%);
+    padding: 16px 32px;
+    box-sizing: border-box;
+
+    color: #ffffff;
+    background-color: #5D50C6;
+    border-radius: 100px;
+}
+
+.btn-purple:hover,
+.btn-purple:focus{
+    opacity: .8;
+    transition: var(--transition-slow);
+}

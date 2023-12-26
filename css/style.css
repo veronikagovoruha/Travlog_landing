@@ -47,7 +47,7 @@
   /* text color */
   --main-txt-cl: #191825;
   --secondary-txt-cl: #F85E9F;
-  --subtitle--txt-cl: #191825;
+  --subtitle--txt-cl: rgba(25, 24, 37, 0.50);
   --title-txt-cl: #FF5722;
   --btn-txt-cl: #EEEEEE;
   --transition-fast: 300ms ease-in-out;
@@ -75,7 +75,7 @@ img {
 
 a {
   text-decoration: none;
-  color: currentColor;
+  color: inherit;
 }
 
 ul {
@@ -90,14 +90,21 @@ ul {
 }
 
 .title {
-  font-family: var(--title-font);
-  color: var(--title-txt-cl);
-  margin-bottom: 20px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.19;
+  color: var(--main-txt-cl);
   text-align: center;
 }
 
 .subtitle {
   font-family: var(--subtitle-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.37;
   color: var(--secondary-txt-cl);
   text-align: center;
 }
@@ -119,10 +126,103 @@ ul {
 }
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1224px;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.btn-purple {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  color: #ffffff;
+  background-color: #5D50C6;
+  border-radius: 100px;
+}
+
+.btn-purple:hover,
+.btn-purple:focus {
+  opacity: 0.8;
+  transition: var(--transition-slow);
+}
+
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header__burger {
+  display: none;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-link:hover,
+.header__logo-link:focus {
+  opacity: 0.8;
+  transition: var(--transition-fast);
+}
+
+.header__logo-image {
+  margin-right: 16px;
+}
+
+.header__logo {
+  color: var(--main-txt-cl);
+  font-family: var(--main-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 64px;
+}
+
+.nav__link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--subtitle--txt-cl);
+  font-family: var(--main-font);
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: var(--main-txt-cl);
+  transition: var(--transition-fast);
+}
+
+.auth__log {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  color: var(--main-txt-cl);
+  padding: 16px 32px;
 }
 
 

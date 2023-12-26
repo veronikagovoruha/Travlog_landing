@@ -19,7 +19,7 @@ img {
 
 a{
   text-decoration: none;
-  color: currentColor;
+  color: inherit;
 }
 
 ul{
@@ -34,16 +34,16 @@ ul{
 }
 
 .title{
-  font-family: var(--title-font);
-//   @include fonts(normal, 700, 36px, 1.19);
-  color: var(--title-txt-cl);
-  margin-bottom: 20px;
+  font-family: var(--main-font);
+  @include fonts(normal, 700, 44px, 1.19);
+  color: var(--main-txt-cl);
+  // margin-bottom: 20px;
   text-align: center;
 }
 
 .subtitle{
   font-family: var(--subtitle-font);
-//   @include fonts(normal, 400, 16px, 1.37);
+  @include fonts(normal, 400, 18px, 1.37);
   color: var(--secondary-txt-cl);
   text-align: center;
 }
