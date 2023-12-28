@@ -5,6 +5,7 @@
 
 .hero__container{
     display: flex;
+    overflow: hidden;
 }
 
 .hero__left-link{
@@ -115,12 +116,11 @@
 //hero__right
 .hero__img-planet-wrapper{
     position: absolute;
-    // right: 0;
-    // left: 0;
 }
 
 .main__img{
     display: flex;
+    align-items: center;
     padding-top: 75px;
     margin-left: 90px;
 }
@@ -138,9 +138,6 @@
 
 .main__img-city-wrapper{
     position: relative;
-    display: flex;
-    align-items: center;
-    margin-top: 116px;
     margin-left: 32px;
 }
 
@@ -158,6 +155,16 @@
     position: absolute;
     left: 383px; 
     bottom: 0
+}
+
+.main__img-mountain-wrapper{
+    position: relative;
+}
+
+.main__img-sea,
+.main__img-mountain,
+.main__img-city{
+    border-radius: 33px;
 }
 
 @media only screen and  (max-width: 1024px){
@@ -180,4 +187,40 @@
         text-align: center;
         margin: 0 auto;
     }
+
+    .hero__right{
+        margin-bottom: 64px;
+    }
+
+    .hero__btn{
+        justify-content: center;
+    }
+}
+
+@media only screen and  (max-width: 836px){
+    .hero__img-planet-wrapper{
+        right: 0;
+        left: 0;
+    }
+
+    .main__img {
+        margin-left: 0px;
+        }
+}
+
+@media only screen and  (max-width: 767px){
+    .hero{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .hero__right{
+        position: relative;
+    }
+
+    .hero__img-planet-wrapper{
+        right: -45px;
+    }
+
+    
 }
