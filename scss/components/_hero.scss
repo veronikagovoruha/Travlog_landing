@@ -41,12 +41,12 @@
     @include fonts(normal, 400, 18px, 160%);
     color: var(--subtitle--txt-cl);
 
-    padding-top: 43px;
+    margin-top: 43px;
     width: 412px;
 }
 
 .hero__btn{
-    padding-top: 43px;
+    margin-top: 43px;
     display: flex;
 }
 
@@ -89,6 +89,10 @@
 }
 
 .hero__img-user{
+    position: absolute;
+    left: 383px; 
+    bottom: 0;
+
     padding: 16px;
     border-radius: 100px;
     background: var(--title-txt-cl);
@@ -121,7 +125,7 @@
 .main__img{
     display: flex;
     align-items: center;
-    padding-top: 75px;
+    margin-top: 75px;
     margin-left: 90px;
 }
 
@@ -149,12 +153,6 @@
     position: absolute;
     top: 333px;
     right: -93px;
-}
-
-.hero__img-user{
-    position: absolute;
-    left: 383px; 
-    bottom: 0
 }
 
 .main__img-mountain-wrapper{
@@ -205,10 +203,10 @@
 
     .main__img {
         margin-left: 0px;
-        }
+    }
 }
 
-@media only screen and  (max-width: 767px){
+@media only screen and  (max-width: 767.98px){
     .hero{
         padding-top: 32px;
         padding-bottom: 32px;
@@ -216,11 +214,77 @@
 
     .hero__right{
         position: relative;
+        margin-bottom:32px;
     }
 
-    .hero__img-planet-wrapper{
-        right: -45px;
+    .main__img{
+        margin-left: 46px;
+        margin-top: 38px;
     }
 
-    
+    .main__img-sea-wrapper{
+        margin-bottom: 16px;
+    }
+
+    .main__img-city-wrapper{
+        margin-left: 16px;
+    }
+
+    .hero__img-message{
+        position: absolute;
+        bottom: -10px;
+        left: -11px;
+        width: 10px;
+        height: 10px;
+        padding: 11px;
+        box-shadow: 0px 9.753px 9.753px 0px rgba(0, 0, 0, 0.09), 0px 22.073px 13.346px 0px rgba(0, 0, 0, 0.05), 0px 39.526px 15.913px 0px rgba(0, 0, 0, 0.01), 0px 61.599px 17.453px 0px rgba(0, 0, 0, 0.00);
+    }
+
+    .hero__img-wrapper{
+        padding: 8px 15px;
+        top: 140px;
+        right: -46px;
+        width: 55px;
+        gap: 4px;
+        box-shadow: 0px 9.753px 9.753px 0px rgba(0, 0, 0, 0.09), 0px 22.073px 13.346px 0px rgba(0, 0, 0, 0.05), 0px 39.526px 15.913px 0px rgba(0, 0, 0, 0.01), 0px 61.599px 17.453px 0px rgba(0, 0, 0, 0.00);
+    }
+
+    .hero__img-location{
+        width: 12px;
+        height: 12px;
+    }
+
+    .hero__img-title{
+        @include fonts(normal, 700, 7px, 120%);
+    }
+
+    .hero__img-user{
+        width: 16px;
+        height: 16px;
+        padding: 8px;
+        left: 200px;
+        box-shadow: 0px 9.753px 9.753px 0px rgba(0, 0, 0, 0.09), 0px 22.073px 13.346px 0px rgba(0, 0, 0, 0.05), 0px 39.526px 15.913px 0px rgba(0, 0, 0, 0.01), 0px 61.599px 17.453px 0px rgba(0, 0, 0, 0.00);
+    }
+
+
+//hero-left
+    .hero__title{
+        @include fonts(normal, 700, 40px, 120%);
+        width: 398px;
+        margin-top:16px
+    }
+
+    .hero__subtitle{
+        @include fonts(normal, 400, 16px, 160%);
+        width: 398px;
+        margin-top: 24px;
+    }
+
+    .hero__btn{
+        margin-top: 32px;
+    }
+}
+
+@media only screen and  (max-width: 425px){
+
 }
