@@ -70,37 +70,42 @@
                     </div>
                 </div>
                 <div class="hero__right">
-                    <picture>
-                        <source srcset="./image/hero/hero-planet@1x.webp 1x, ./image/hero/hero-planet@2x.webp 2x" media="(min-width: 834px)">
-                        <source srcset="./image/hero/hero-planet-mobile@1x.webp 1x, ./image/hero/hero-planet-mobile@2x.webp 2x" media="(min-width: 320px)">
-                        <img class="hero__img-planet" src="./image/hero/hero-planet@1x.webp" alt="">
-                    </picture>
+                    <!-- min-width: 834px -->
+                    <div class="hero__img-planet-wrapper">
+                        <picture>
+                            <source srcset="./image/hero/hero-planet@1x.webp 1x, ./image/hero/hero-planet@2x.webp 2x" width="772" height="287" media="(min-width: 768px)">
+                            <source srcset="./image/hero/hero-planet-mobile@1x.webp 1x, ./image/hero/hero-planet-mobile@2x.webp 2x" width="396" height="148"  media="(min-width: 320px)">
+                            <img class="hero__img-planet" src="" alt="Planet">
+                        </picture>
+                    </div>
                     <div class="main__img">
-                        <div class="main__img-sea-wrapper">
-                            <picture>
-                                <source srcset="./image/hero/hero-1@1x.jpg 1x, ./image/hero/hero-1@2x.jpg 2x" media="(min-width: 834px)">
-                                <source srcset="./image/hero/hero-mobile1@1x.jpg 1x, ./image/hero/hero-mobile1@2x.jpg 2x" media="(min-width: 320px)">
-                                <img class="main__img-sea" src="./image/hero/hero-1@1x.jpg" alt="Sea">
-                            </picture>
-                            <svg class="hero__img-message" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M28.5805 3.44394C27.9136 2.75944 26.9265 2.50442 26.0061 2.77285L4.54396 9.014C3.57289 9.28378 2.88461 10.0582 2.6992 11.042C2.50979 12.0433 3.1714 13.3144 4.03575 13.8458L10.7465 17.9704C11.4348 18.3932 12.3231 18.2872 12.8927 17.7126L20.5772 9.98037C20.964 9.57772 21.6042 9.57772 21.9912 9.98037C22.378 10.3696 22.378 11.0004 21.9912 11.4031L14.2933 19.1368C13.7224 19.7098 13.6157 20.6024 14.0358 21.2949L18.1362 28.073C18.6164 28.8782 19.4434 29.3346 20.3504 29.3346C20.4572 29.3346 20.5772 29.3346 20.684 29.3212C21.7244 29.187 22.5513 28.4757 22.8581 27.469L29.2208 6.03436C29.5009 5.12168 29.2474 4.12846 28.5805 3.44394Z" fill="white"/>
-                            </svg>
-                        </div>
-                        <div class="main__img-mountain-wrapper">
-                            <picture>
-                                <source srcset="./image/hero/hero-2@1x.jpg 1x, ./image/hero/hero-2@2x.jpg 2x" media="(min-width: 834px)">
-                                <source srcset="./image/hero/hero-mobile2@1x.jpg 1x, ./image/hero/hero-mobile2@2x.jpg 2x" media="(min-width: 320px)">
-                                <img class="main__img-mountain" src="./image/hero/hero-2@1x.jpg" alt="Mountain">
-                            </picture>
-                            <svg class="hero__img-user" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6666 16.737C16.3394 16.737 19.2834 13.7548 19.2834 10.0345C19.2834 6.3142 16.3394 3.33203 12.6666 3.33203C8.99387 3.33203 6.04979 6.3142 6.04979 10.0345C6.04979 13.7548 8.99387 16.737 12.6666 16.737ZM12.6666 20.019C7.27225 20.019 2.66663 20.8815 2.66663 24.3272C2.66663 27.7718 7.24423 28.6654 12.6666 28.6654C18.0597 28.6654 22.6666 27.8028 22.6666 24.357C22.6666 20.9112 18.089 20.019 12.6666 20.019ZM26.5305 12.7825H28.1346C28.7949 12.7825 29.3333 13.3284 29.3333 13.998C29.3333 14.6675 28.7949 15.2135 28.1346 15.2135H26.5305V16.7832C26.5305 17.4528 25.9936 17.9987 25.332 17.9987C24.6717 17.9987 24.1333 17.4528 24.1333 16.7832V15.2135H22.532C21.8702 15.2135 21.3333 14.6675 21.3333 13.998C21.3333 13.3284 21.8702 12.7825 22.532 12.7825H24.1333V11.2142C24.1333 10.5446 24.6717 9.9987 25.332 9.9987C25.9936 9.9987 26.5305 10.5446 26.5305 11.2142V12.7825Z" fill="white"/>
-                            </svg>
+                        <div class="main__img-wrapper">
+                            <div class="main__img-sea-wrapper">
+                                <picture>
+                                    <source srcset="./image/hero/hero-1@1x.jpg 1x, ./image/hero/hero-1@2x.jpg 2x" width="272" height="300" media="(min-width: 768px)">
+                                    <source srcset="./image/hero/hero-mobile1@1x.jpg 1x, ./image/hero/hero-mobile1@2x.jpg 2x"  width="139.62" height="153.99"  media="(min-width: 320px)">
+                                    <img class="main__img-sea" src="" alt="Sea">
+                                </picture>
+                                <svg class="hero__img-message" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M28.5805 3.44394C27.9136 2.75944 26.9265 2.50442 26.0061 2.77285L4.54396 9.014C3.57289 9.28378 2.88461 10.0582 2.6992 11.042C2.50979 12.0433 3.1714 13.3144 4.03575 13.8458L10.7465 17.9704C11.4348 18.3932 12.3231 18.2872 12.8927 17.7126L20.5772 9.98037C20.964 9.57772 21.6042 9.57772 21.9912 9.98037C22.378 10.3696 22.378 11.0004 21.9912 11.4031L14.2933 19.1368C13.7224 19.7098 13.6157 20.6024 14.0358 21.2949L18.1362 28.073C18.6164 28.8782 19.4434 29.3346 20.3504 29.3346C20.4572 29.3346 20.5772 29.3346 20.684 29.3212C21.7244 29.187 22.5513 28.4757 22.8581 27.469L29.2208 6.03436C29.5009 5.12168 29.2474 4.12846 28.5805 3.44394Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="main__img-mountain-wrapper">
+                                <picture>
+                                    <source srcset="./image/hero/hero-2@1x.jpg 1x, ./image/hero/hero-2@2x.jpg 2x" width="272" height="300" media="(min-width: 768px)">
+                                    <source srcset="./image/hero/hero-mobile2@1x.jpg 1x, ./image/hero/hero-mobile2@2x.jpg 2x" width="139.62" height="153.99" media="(min-width: 320px)">
+                                    <img class="main__img-mountain" src="./image/hero/hero-2@1x.jpg" alt="Mountain">
+                                </picture>
+                                <svg class="hero__img-user" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6666 16.737C16.3394 16.737 19.2834 13.7548 19.2834 10.0345C19.2834 6.3142 16.3394 3.33203 12.6666 3.33203C8.99387 3.33203 6.04979 6.3142 6.04979 10.0345C6.04979 13.7548 8.99387 16.737 12.6666 16.737ZM12.6666 20.019C7.27225 20.019 2.66663 20.8815 2.66663 24.3272C2.66663 27.7718 7.24423 28.6654 12.6666 28.6654C18.0597 28.6654 22.6666 27.8028 22.6666 24.357C22.6666 20.9112 18.089 20.019 12.6666 20.019ZM26.5305 12.7825H28.1346C28.7949 12.7825 29.3333 13.3284 29.3333 13.998C29.3333 14.6675 28.7949 15.2135 28.1346 15.2135H26.5305V16.7832C26.5305 17.4528 25.9936 17.9987 25.332 17.9987C24.6717 17.9987 24.1333 17.4528 24.1333 16.7832V15.2135H22.532C21.8702 15.2135 21.3333 14.6675 21.3333 13.998C21.3333 13.3284 21.8702 12.7825 22.532 12.7825H24.1333V11.2142C24.1333 10.5446 24.6717 9.9987 25.332 9.9987C25.9936 9.9987 26.5305 10.5446 26.5305 11.2142V12.7825Z" fill="white"/>
+                                </svg>
+                            </div>
                         </div>
                         <div class="main__img-city-wrapper">
                             <picture>
-                                <source srcset="./image/hero/hero-3@1x.jpg 1x, ./image/hero/hero-3@2x.jpg 2x" media="(min-width: 834px)">
-                                <source srcset="./image/hero/hero-mobile3@1x.jpg 1x, ./image/hero/hero-mobile3@2x.jpg 2x" media="(min-width: 320px)">
-                                <img class="main__img-city" src="./image/hero/hero-3@1x.jpg" alt="Photo in city">
+                                <source srcset="./image/hero/hero-3@1x.jpg 1x, ./image/hero/hero-3@2x.jpg 2x" width="272" height="400" media="(min-width: 768px)">
+                                <source srcset="./image/hero/hero-mobile3@1x.jpg 1x, ./image/hero/hero-mobile3@2x.jpg 2x" width="139.62" height="205.33" media="(min-width: 320px)">
+                                <img class="main__img-city" src="" alt="Photo in city">
                             </picture>
                             <p class="hero__img-wrapper">
                                 <svg class="hero__img-location" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
