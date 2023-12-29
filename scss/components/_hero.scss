@@ -285,6 +285,30 @@
     }
 }
 
-@media only screen and  (max-width: 425px){
 
+
+@media only screen and  (max-width: 425.98px){
+    .hero__img-planet-wrapper{
+        left: unset;
+        right: -41px;
+    }
+
+    .main__img {
+        margin-left: 20px;
+    }
+
+    .hero__btn{
+        flex-direction: column;
+    }
+
+    .hero__btn-get{
+        width: 100%;
+        padding: 24px 32px;
+        margin-bottom: 24px;
+    }
+
+    .hero__btn-demo{
+        padding: 24px 32px;
+        justify-content: center;
+    }
 }
