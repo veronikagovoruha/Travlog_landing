@@ -28,11 +28,6 @@ ul{
   margin: 0;
 }
 
-.section{
-  padding-top: 64px;
-  padding-bottom: 64px;
-}
-
 .title{
   font-family: var(--main-font);
   @include fonts(normal, 700, 44px, 1.19);

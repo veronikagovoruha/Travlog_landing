@@ -7,8 +7,24 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.partners__item:not(:last-child){
-    margin-right: 68px;
+@media only screen and  (max-width: 1024px){
+    .partners__list{
+        justify-content: center;
+    }
+    .partners__item{
+        padding-left: 13.5px;
+        padding-left: 13.5px;
+    }
 }
+
+@media only screen and  (max-width: 425.98px){
+    .partners{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    
+}
+
