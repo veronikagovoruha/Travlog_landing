@@ -6,3 +6,63 @@
 .point__container{
     display: flex;
 }
+.point__image{
+    min-width: 871px;
+    width: 871px;
+}
+.point__right{
+    min-width: 441px;
+    width: 441px;
+}
+.point__text{
+    font-family: var(--main-font);
+    @include fonts(normal, 700, 23px, 120%);
+    letter-spacing: 4.6px;
+    text-transform: uppercase;
+    color: var(--secondary-txt-cl);
+    margin-bottom: 16px;
+}
+
+.point__title{
+    font-family: var(--main-font);
+    @include fonts(normal, 700, 44px, 120%);
+    color: var(--main-txt-cl);
+    margin-bottom: 32px;
+}
+
+.point__subtitle{
+    font-family: var(--subtitle-font);
+    @include fonts(normal, 400, 18px, 160%);
+    color: rgba(25, 24, 37, 0.50);
+    margin-bottom: 64px;
+}
+
+.point__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.point__item{
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    border-radius: 32px;
+    border: 1px solid var(--Grey-Scale-Black-10, rgba(25, 24, 37, 0.10));
+    background: var(--white, #FFF);
+}
+
+.point__num{
+    font-family: var(--main-font);
+    @include fonts(normal, 700, 35px, 120%);
+    color: #FF5722;
+}
+
+.point__feature{
+    font-family: var(--subtitle-font);
+    @include fonts(normal, 400, 18px, 160%);
+    color: var(--main-txt-cl);
+}
