@@ -696,6 +696,8 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 444px;
+  min-width: 444px;
 }
 
 .services__subtitle {
@@ -709,25 +711,29 @@ ul {
   margin-top: 16px;
 }
 
-.services__list-wrapper {
-  position: relative;
-}
-
 .services__list {
-  position: absolute;
   display: flex;
-  right: -1000px;
 }
 
 .services__item {
   display: flex;
-  padding: 64px;
   flex-direction: column;
   align-items: center;
-  flex: 1 0 0;
+  padding: 64px;
+  width: 221px;
+  min-width: 221px;
+  margin-right: 21px;
   border-radius: 32px;
   border: 1px solid rgba(25, 24, 37, 0.1);
   background: #ffffff;
+}
+
+.services__item:hover,
+.services__item:focus {
+  border: none;
+  border-radius: 32px;
+  background: #FFF;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1), 0px 41px 89px 0px rgba(0, 0, 0, 0.1);
 }
 
 .services__item-svg {
@@ -745,6 +751,27 @@ ul {
   margin-bottom: 32px;
 }
 
+.services__item-subtitle {
+  font-family: var(--subtitle-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: rgba(25, 24, 37, 0.5);
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .services__container {
+    flex-direction: column;
+  }
+  .services__subtitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+  }
+}
 .destination {
   padding-top: 64px;
   padding-bottom: 64px;
@@ -785,6 +812,12 @@ ul {
   border: 1px solid rgba(25, 24, 37, 0.1);
   background: #ffffff;
   padding: 0;
+}
+
+.destination__btn:hover,
+.destination__btn:focus {
+  opacity: 0.8;
+  transition: var(--transition-fast);
 }
 
 .destination__btn-purple {
@@ -893,8 +926,52 @@ ul {
 @media only screen and (max-width: 768px) {
   .destination__list {
     flex-direction: column;
+    align-items: center;
+  }
+  .destination__item {
+    border-radius: 32px;
+  }
+  .destination__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 32px;
   }
 }
+@media only screen and (max-width: 425.98px) {
+  .destination {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .destination__top {
+    margin-bottom: 32px;
+  }
+  .destination__subtitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 3.2px;
+  }
+  .destination__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    margin-bottom: 32px;
+  }
+  .destination__btn {
+    width: 64px;
+    height: 64px;
+  }
+}
+.point {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.point__container {
+  display: flex;
+}
+
 
 
 /*# sourceMappingURL=style.css.map */
