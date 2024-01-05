@@ -6,13 +6,32 @@
 .point__container{
     display: flex;
 }
-.point__image{
-    min-width: 871px;
-    width: 871px;
+
+.point__image-wrapper{
+    position: relative;
+    flex: 1;
 }
+
+.point__image{
+    position: absolute;
+    right: 0;
+    width: 60.58vw;
+}
+
+.point__subtitle-wrapper{
+    position: relative;
+}
+
+.point__svg{
+    position: absolute;
+    left: 292px;
+    top: 13px;
+}
+
 .point__right{
     min-width: 441px;
     width: 441px;
+    margin-top: 45px;
 }
 .point__text{
     font-family: var(--main-font);
@@ -45,7 +64,7 @@
 
 .point__item{
     display: flex;
-    padding: 32px;
+    padding: 29px;
     flex-direction: column;
     align-items: center;
     gap: 16px;
@@ -65,4 +84,70 @@
     font-family: var(--subtitle-font);
     @include fonts(normal, 400, 18px, 160%);
     color: var(--main-txt-cl);
+}
+
+@media only screen and  (max-width: 1024px){
+    .point__svg{
+        display: none;
+    }
+
+    .point__container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .point__image{
+        position: relative;
+    }
+
+    .point__right{
+        min-width: unset;
+        width: unset;
+        text-align: center;
+    }
+
+    .point__subtitle{
+        width: 832px;
+    }
+}
+
+@media only screen and  (max-width: 869px){
+    .point__right{
+        width: 600px;
+    }
+
+    .point__subtitle{
+        width: unset;
+    }
+}
+
+@media only screen and  (max-width: 588px){
+    .point__right{
+        width: 500px;
+    }
+}
+
+@media only screen and  (max-width: 474px){
+    .point__right{
+        width: 400px;
+    }
+}
+
+@media only screen and  (max-width: 425.98px){
+    .point__text{
+        @include fonts(normal, 700, 18px, 120%);
+    }
+
+    .point__title{
+        @include fonts(normal, 700, 32px, 120%);
+    }
+
+    .point__subtitle{
+        @include fonts(normal, 400, 16px, 160%);
+    }
+
+    .point__list{
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
 }

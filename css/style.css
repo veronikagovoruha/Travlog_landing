@@ -1018,14 +1018,31 @@ ul {
   display: flex;
 }
 
+.point__image-wrapper {
+  position: relative;
+  flex: 1;
+}
+
 .point__image {
-  min-width: 871px;
-  width: 871px;
+  position: absolute;
+  right: 0;
+  width: 60.58vw;
+}
+
+.point__subtitle-wrapper {
+  position: relative;
+}
+
+.point__svg {
+  position: absolute;
+  left: 292px;
+  top: 13px;
 }
 
 .point__right {
   min-width: 441px;
   width: 441px;
+  margin-top: 45px;
 }
 
 .point__text {
@@ -1068,7 +1085,7 @@ ul {
 
 .point__item {
   display: flex;
-  padding: 32px;
+  padding: 29px;
   flex-direction: column;
   align-items: center;
   gap: 16px;
@@ -1095,6 +1112,68 @@ ul {
   color: var(--main-txt-cl);
 }
 
+@media only screen and (max-width: 1024px) {
+  .point__svg {
+    display: none;
+  }
+  .point__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .point__image {
+    position: relative;
+  }
+  .point__right {
+    min-width: unset;
+    width: unset;
+    text-align: center;
+  }
+  .point__subtitle {
+    width: 832px;
+  }
+}
+@media only screen and (max-width: 869px) {
+  .point__right {
+    width: 600px;
+  }
+  .point__subtitle {
+    width: unset;
+  }
+}
+@media only screen and (max-width: 588px) {
+  .point__right {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 474px) {
+  .point__right {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 425.98px) {
+  .point__text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+  }
+  .point__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+  }
+  .point__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+  }
+  .point__list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
 .features {
   padding-top: 64px;
   padding-bottom: 64px;
@@ -1230,6 +1309,10 @@ ul {
   }
 }
 @media only screen and (max-width: 425.98px) {
+  .features {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
   .features__left {
     display: flex;
     flex-direction: column;
