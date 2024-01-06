@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -389,7 +390,7 @@
             </div>
         </section>
 
-        <!-- <section class="reviews section">
+        <section class="reviews">
             <div class="reviews__container container">
                 <p class="reviews__text">Testimonials</p>
                 <h2 class="reviews__title">Trust our clients</h2>
@@ -397,43 +398,73 @@
                     <li class="reviews__item">
                         <picture>
                             <source srcset="./image/reviews/reviews-avatar1@1x.jpg 1x, ./image/reviews/reviews-avatar1@1x.jpg 2x" media="(min-width: 320px)">
-                            <img class="reviews__item-avatar" src="./image/reviews/reviews-avatar1@1x.jpg" alt="avatar">
+                            <img class="reviews__item-avatar" src="" alt="avatar">
                         </picture>
-                        <p class="reviews__item-name">Mark Smith / Travel Enthusiast</p>
-                        <svg class="reviews__item-stars" width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21.8912 16.092C21.5459 16.4267 21.3872 16.9107 21.4659 17.3853L22.6512 23.9453C22.7512 24.5013 22.5165 25.064 22.0512 25.3853C21.5952 25.7187 20.9885 25.7587 20.4912 25.492L14.5859 22.412C14.3805 22.3027 14.1525 22.244 13.9192 22.2373H13.5579C13.4325 22.256 13.3099 22.296 13.1979 22.3573L7.29118 25.452C6.99918 25.5987 6.66852 25.6507 6.34452 25.5987C5.55518 25.4493 5.02852 24.6973 5.15785 23.904L6.34452 17.344C6.42318 16.8653 6.26452 16.3787 5.91918 16.0387L1.10452 11.372C0.70185 10.9813 0.56185 10.3947 0.74585 9.86536C0.924517 9.33736 1.38052 8.95203 1.93118 8.86536L8.55785 7.90403C9.06185 7.85203 9.50452 7.54536 9.73118 7.09203L12.6512 1.10536C12.7205 0.972031 12.8099 0.849365 12.9179 0.745365L13.0379 0.652031C13.1005 0.582698 13.1725 0.525365 13.2525 0.478698L13.3979 0.425365L13.6245 0.332031H14.1859C14.6872 0.384031 15.1285 0.684031 15.3592 1.13203L18.3179 7.09203C18.5312 7.52803 18.9459 7.8307 19.4245 7.90403L26.0512 8.86536C26.6112 8.94536 27.0792 9.33203 27.2645 9.86536C27.4392 10.4 27.2885 10.9867 26.8779 11.372L21.8912 16.092Z" fill="#FACD49"/>
-                        </svg>
+                        <p class="reviews__item-name">Mark Smith <span class="reviews__item-travel">/ Travel Enthusiast</span>
+                        </p>
+                        <ul class="list__stars">
+                            <li class="item__stars">
+                                <svg class="reviews__item-stars" width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.8912 16.092C21.5459 16.4267 21.3872 16.9107 21.4659 17.3853L22.6512 23.9453C22.7512 24.5013 22.5165 25.064 22.0512 25.3853C21.5952 25.7187 20.9885 25.7587 20.4912 25.492L14.5859 22.412C14.3805 22.3027 14.1525 22.244 13.9192 22.2373H13.5579C13.4325 22.256 13.3099 22.296 13.1979 22.3573L7.29118 25.452C6.99918 25.5987 6.66852 25.6507 6.34452 25.5987C5.55518 25.4493 5.02852 24.6973 5.15785 23.904L6.34452 17.344C6.42318 16.8653 6.26452 16.3787 5.91918 16.0387L1.10452 11.372C0.70185 10.9813 0.56185 10.3947 0.74585 9.86536C0.924517 9.33736 1.38052 8.95203 1.93118 8.86536L8.55785 7.90403C9.06185 7.85203 9.50452 7.54536 9.73118 7.09203L12.6512 1.10536C12.7205 0.972031 12.8099 0.849365 12.9179 0.745365L13.0379 0.652031C13.1005 0.582698 13.1725 0.525365 13.2525 0.478698L13.3979 0.425365L13.6245 0.332031H14.1859C14.6872 0.384031 15.1285 0.684031 15.3592 1.13203L18.3179 7.09203C18.5312 7.52803 18.9459 7.8307 19.4245 7.90403L26.0512 8.86536C26.6112 8.94536 27.0792 9.33203 27.2645 9.86536C27.4392 10.4 27.2885 10.9867 26.8779 11.372L21.8912 16.092Z" fill="#FACD49"/>
+                                </svg>
+                            </li>
+                            <li class="item__stars">
+                                <svg class="reviews__item-stars" width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.8912 16.092C21.5459 16.4267 21.3872 16.9107 21.4659 17.3853L22.6512 23.9453C22.7512 24.5013 22.5165 25.064 22.0512 25.3853C21.5952 25.7187 20.9885 25.7587 20.4912 25.492L14.5859 22.412C14.3805 22.3027 14.1525 22.244 13.9192 22.2373H13.5579C13.4325 22.256 13.3099 22.296 13.1979 22.3573L7.29118 25.452C6.99918 25.5987 6.66852 25.6507 6.34452 25.5987C5.55518 25.4493 5.02852 24.6973 5.15785 23.904L6.34452 17.344C6.42318 16.8653 6.26452 16.3787 5.91918 16.0387L1.10452 11.372C0.70185 10.9813 0.56185 10.3947 0.74585 9.86536C0.924517 9.33736 1.38052 8.95203 1.93118 8.86536L8.55785 7.90403C9.06185 7.85203 9.50452 7.54536 9.73118 7.09203L12.6512 1.10536C12.7205 0.972031 12.8099 0.849365 12.9179 0.745365L13.0379 0.652031C13.1005 0.582698 13.1725 0.525365 13.2525 0.478698L13.3979 0.425365L13.6245 0.332031H14.1859C14.6872 0.384031 15.1285 0.684031 15.3592 1.13203L18.3179 7.09203C18.5312 7.52803 18.9459 7.8307 19.4245 7.90403L26.0512 8.86536C26.6112 8.94536 27.0792 9.33203 27.2645 9.86536C27.4392 10.4 27.2885 10.9867 26.8779 11.372L21.8912 16.092Z" fill="#FACD49"/>
+                                </svg>
+                            </li>
+                            <li class="item__stars">
+                                <svg class="reviews__item-stars" width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.8912 16.092C21.5459 16.4267 21.3872 16.9107 21.4659 17.3853L22.6512 23.9453C22.7512 24.5013 22.5165 25.064 22.0512 25.3853C21.5952 25.7187 20.9885 25.7587 20.4912 25.492L14.5859 22.412C14.3805 22.3027 14.1525 22.244 13.9192 22.2373H13.5579C13.4325 22.256 13.3099 22.296 13.1979 22.3573L7.29118 25.452C6.99918 25.5987 6.66852 25.6507 6.34452 25.5987C5.55518 25.4493 5.02852 24.6973 5.15785 23.904L6.34452 17.344C6.42318 16.8653 6.26452 16.3787 5.91918 16.0387L1.10452 11.372C0.70185 10.9813 0.56185 10.3947 0.74585 9.86536C0.924517 9.33736 1.38052 8.95203 1.93118 8.86536L8.55785 7.90403C9.06185 7.85203 9.50452 7.54536 9.73118 7.09203L12.6512 1.10536C12.7205 0.972031 12.8099 0.849365 12.9179 0.745365L13.0379 0.652031C13.1005 0.582698 13.1725 0.525365 13.2525 0.478698L13.3979 0.425365L13.6245 0.332031H14.1859C14.6872 0.384031 15.1285 0.684031 15.3592 1.13203L18.3179 7.09203C18.5312 7.52803 18.9459 7.8307 19.4245 7.90403L26.0512 8.86536C26.6112 8.94536 27.0792 9.33203 27.2645 9.86536C27.4392 10.4 27.2885 10.9867 26.8779 11.372L21.8912 16.092Z" fill="#FACD49"/>
+                                </svg>
+                            </li>
+                            <li class="item__stars">
+                                <svg class="reviews__item-stars" width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.8912 16.092C21.5459 16.4267 21.3872 16.9107 21.4659 17.3853L22.6512 23.9453C22.7512 24.5013 22.5165 25.064 22.0512 25.3853C21.5952 25.7187 20.9885 25.7587 20.4912 25.492L14.5859 22.412C14.3805 22.3027 14.1525 22.244 13.9192 22.2373H13.5579C13.4325 22.256 13.3099 22.296 13.1979 22.3573L7.29118 25.452C6.99918 25.5987 6.66852 25.6507 6.34452 25.5987C5.55518 25.4493 5.02852 24.6973 5.15785 23.904L6.34452 17.344C6.42318 16.8653 6.26452 16.3787 5.91918 16.0387L1.10452 11.372C0.70185 10.9813 0.56185 10.3947 0.74585 9.86536C0.924517 9.33736 1.38052 8.95203 1.93118 8.86536L8.55785 7.90403C9.06185 7.85203 9.50452 7.54536 9.73118 7.09203L12.6512 1.10536C12.7205 0.972031 12.8099 0.849365 12.9179 0.745365L13.0379 0.652031C13.1005 0.582698 13.1725 0.525365 13.2525 0.478698L13.3979 0.425365L13.6245 0.332031H14.1859C14.6872 0.384031 15.1285 0.684031 15.3592 1.13203L18.3179 7.09203C18.5312 7.52803 18.9459 7.8307 19.4245 7.90403L26.0512 8.86536C26.6112 8.94536 27.0792 9.33203 27.2645 9.86536C27.4392 10.4 27.2885 10.9867 26.8779 11.372L21.8912 16.092Z" fill="#FACD49"/>
+                                </svg>
+                            </li>
+                            <li class="item__stars">
+                                <svg class="reviews__item-stars" width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.8912 16.092C21.5459 16.4267 21.3872 16.9107 21.4659 17.3853L22.6512 23.9453C22.7512 24.5013 22.5165 25.064 22.0512 25.3853C21.5952 25.7187 20.9885 25.7587 20.4912 25.492L14.5859 22.412C14.3805 22.3027 14.1525 22.244 13.9192 22.2373H13.5579C13.4325 22.256 13.3099 22.296 13.1979 22.3573L7.29118 25.452C6.99918 25.5987 6.66852 25.6507 6.34452 25.5987C5.55518 25.4493 5.02852 24.6973 5.15785 23.904L6.34452 17.344C6.42318 16.8653 6.26452 16.3787 5.91918 16.0387L1.10452 11.372C0.70185 10.9813 0.56185 10.3947 0.74585 9.86536C0.924517 9.33736 1.38052 8.95203 1.93118 8.86536L8.55785 7.90403C9.06185 7.85203 9.50452 7.54536 9.73118 7.09203L12.6512 1.10536C12.7205 0.972031 12.8099 0.849365 12.9179 0.745365L13.0379 0.652031C13.1005 0.582698 13.1725 0.525365 13.2525 0.478698L13.3979 0.425365L13.6245 0.332031H14.1859C14.6872 0.384031 15.1285 0.684031 15.3592 1.13203L18.3179 7.09203C18.5312 7.52803 18.9459 7.8307 19.4245 7.90403L26.0512 8.86536C26.6112 8.94536 27.0792 9.33203 27.2645 9.86536C27.4392 10.4 27.2885 10.9867 26.8779 11.372L21.8912 16.092Z" fill="#FACD49"/>
+                                </svg>
+                            </li>
+                        </ul>
                         <p class="reviews__item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
                             in a piece of classical Latin literature from 45 BC.</p>
-                    </li><li class="reviews__item">
-                        <img class="reviews__item-avatar" src="./image/reviews/reviews-avatar1@1x.jpg" alt="">
+                    </li>
+                    <!-- <li class="reviews__item">
+                        <picture>
+                            <source srcset="./image/reviews/reviews-avatar1@1x.jpg 1x, ./image/reviews/reviews-avatar1@1x.jpg 2x" media="(min-width: 320px)">
+                            <img class="reviews__item-avatar" src="" alt="avatar">
+                        </picture>
                         <p class="reviews__item-name">Mark Smith / Travel Enthusiast</p>
                         <img class="reviews__item-stars" src="" alt="">
                         <p class="reviews__item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
                             in a piece of classical Latin literature from 45 BC.</p>
                     </li>
                     <li class="reviews__item">
-                        <img class="reviews__item-avatar" src="./image/reviews/reviews-avatar1@1x.jpg" alt="">
+                        <picture>
+                            <source srcset="./image/reviews/reviews-avatar1@1x.jpg 1x, ./image/reviews/reviews-avatar1@1x.jpg 2x" media="(min-width: 320px)">
+                            <img class="reviews__item-avatar" src="" alt="avatar">
+                        </picture>
                         <p class="reviews__item-name">Mark Smith / Travel Enthusiast</p>
                         <img class="reviews__item-stars" src="" alt="">
                         <p class="reviews__item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
                             in a piece of classical Latin literature from 45 BC.</p>
-                    </li>
+                    </li> -->
                 </ul>
-                <div class="reviews__btn">
-                    <button class="reviews__btn-left">
-                        <svg class="reviews__svg" width='48'>
-                            <use href="./image/icons/"></use>
+                <button class="reviews__btn reviews__btn-left">
+                    <svg class="reviews__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.41431 11.0005H20.0001C20.5524 11.0005 21.0001 11.4482 21.0001 12.0005C21.0001 12.5528 20.5524 13.0005 20.0001 13.0005H6.41431L9.65695 16.2432C10.0475 16.6337 10.0475 17.2669 9.65695 17.6574C9.26642 18.0479 8.63326 18.0479 8.24273 17.6574L4.00009 13.4147C3.21904 12.6337 3.21904 11.3674 4.00009 10.5863L8.24273 6.34367C8.63326 5.95315 9.26642 5.95315 9.65695 6.34367C10.0475 6.7342 10.0475 7.36736 9.65695 7.75789L6.41431 11.0005Z" fill="#191825"/>
                         </svg>
-                    </button>
-                    <button class="reviews__btn-right">
-                        <svg class="reviews__svg" width='48'>
-                            <use href="./image/icons"></use>
-                        </svg>
-                    </button>
-                </div>
+                </button>
+                <button class="reviews__btn reviews__btn-right">
+                    <svg class="reviews__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.5857 11.0005H3.99991C3.44762 11.0005 2.99991 11.4482 2.99991 12.0005C2.99991 12.5528 3.44762 13.0005 3.99991 13.0005H17.5857L14.3431 16.2432C13.9525 16.6337 13.9525 17.2669 14.3431 17.6574C14.7336 18.0479 15.3667 18.0479 15.7573 17.6574L19.9999 13.4147C20.781 12.6337 20.781 11.3674 19.9999 10.5863L15.7573 6.34367C15.3667 5.95315 14.7336 5.95315 14.3431 6.34367C13.9525 6.7342 13.9525 7.36736 14.3431 7.75789L17.5857 11.0005Z" fill="white"/>
+                    </svg>
+                </button>
             </div>
-        </section> -->
+        </section>
 
         <!-- <section class="subscribe section">
             <div class="subscribe__container container">
@@ -504,6 +535,9 @@
             </div>
         </div>
     </footer> -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 
 </html>

@@ -121,7 +121,7 @@ ul {
 }
 .container {
   width: 100%;
-  max-width: 1224px;
+  max-width: 1184px;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0 20px;
@@ -1360,6 +1360,117 @@ ul {
     text-align: center;
   }
 }
+.reviews {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.reviews__container {
+  position: relative;
+}
+
+.reviews__text {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 120%;
+  letter-spacing: 4.6px;
+  text-transform: uppercase;
+  color: var(--secondary-txt-cl);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.reviews__title {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 120%;
+  color: var(--main-txt-cl);
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews__item-avatar {
+  margin-bottom: 56px;
+}
+
+.reviews__item-name {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  color: #FF5722;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.reviews__item-travel {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 120%;
+  color: rgba(25, 24, 37, 0.75);
+}
+
+.list__stars {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 56px;
+}
+
+.reviews__item-text {
+  font-family: var(--subtitle-font);
+  font-style: normal;
+  font-weight: 450;
+  font-size: 23px;
+  line-height: 160%;
+  color: rgba(25, 24, 37, 0.75);
+  width: 872px;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.reviews__btn {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  border: 1px solid rgba(25, 24, 37, 0.1);
+  background: #ffffff;
+  padding: 0;
+}
+
+.reviews__btn:hover,
+.reviews__btn:focus {
+  opacity: 0.8;
+  transition: var(--transition-fast);
+}
+
+.reviews__btn-left {
+  position: absolute;
+  left: 20px;
+  top: 178px;
+}
+
+.reviews__btn-right {
+  position: absolute;
+  right: 20px;
+  bottom: 272px;
+  border: none;
+  background: #5D50C6;
+}
+
 
 
 /*# sourceMappingURL=style.css.map */
