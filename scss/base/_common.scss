@@ -36,13 +36,6 @@ ul{
   text-align: center;
 }
 
-.subtitle{
-  font-family: var(--subtitle-font);
-  @include fonts(normal, 400, 18px, 1.37);
-  color: var(--secondary-txt-cl);
-  text-align: center;
-}
-
 .btn{
   min-width: 157px;
   max-width: 188px;

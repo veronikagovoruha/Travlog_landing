@@ -32,7 +32,7 @@
 }
 
 .reviews__item-avatar{
-    margin-bottom: 56px;
+    margin: 0 auto;
 }
 
 .reviews__item-name{
@@ -40,6 +40,7 @@
     @include fonts(normal, 700, 28px, 120%);
     color: #FF5722;
     text-align: center;
+    margin-top: 56px;
     margin-bottom: 32px;
 }
 
@@ -51,6 +52,7 @@
 
 .list__stars{
     display: flex;
+    justify-content: center;
     gap: 16px;
     margin-bottom: 56px;
 }
@@ -59,9 +61,9 @@
     font-family: var(--subtitle-font);
     @include fonts(normal, 450, 23px, 160%);
     color: rgba(25, 24, 37, 0.75);
-    width: 872px;
+    max-width: 872px;
     text-align: center;
-    margin-bottom: 56px;
+    margin: 0 auto
 }
 
 .reviews__btn{
@@ -83,7 +85,7 @@
 .reviews__btn-left{
     position: absolute;
     left: 20px;
-    top: 178px;
+    top: 219px;
 }
 
 .reviews__btn-right{
@@ -92,4 +94,79 @@
     bottom: 272px;
     border:none;
     background:  #5D50C6;
+}
+
+//slick-slider
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 56px;
+}
+
+.slick-dots li button{
+    display: none;
+}
+
+.slick-dots li{
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(25, 24, 37, 0.05);
+    cursor: pointer;
+}
+
+.slick-dots li.slick-active{
+    background-color: var(--secondary-txt-cl);
+}
+
+@media only screen and  (max-width: 685px){
+    .reviews{
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .reviews__btn{
+        width: 64px;
+        height: 64px;
+    }
+
+    .reviews__text{
+        @include fonts(normal, 700, 16px, 120%);
+        letter-spacing: 3.2px;
+    }
+
+    .reviews__title{
+        @include fonts(normal, 700, 32px, 120%);
+        margin-bottom: 64px;
+    }
+
+    .reviews__item-name{
+        margin-top: 64px;
+    }
+
+    .list__stars{
+        margin-bottom: 64px;
+    }
+
+    .reviews__item-text{
+        @include fonts(normal, 450, 18px, 160%);
+    }
+
+    .slick-dots{
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    .reviews__btn-right{
+        bottom: unset;
+    }
+
+    .reviews__btn-left{
+        top: unset;
+    }
 }
