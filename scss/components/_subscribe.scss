@@ -1,0 +1,75 @@
+.subscribe{
+    padding-top: 109px;
+    padding-bottom: 64px;
+}
+
+.subscribe__container{
+    border-radius: 32px;
+    background: rgba(250, 205, 73, 0.08);
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.subscribe__text{
+    font-family: var(--main-font);
+    @include fonts(normal, 700, 23px, 120%);
+    text-align: center;
+    letter-spacing: 4.6px;
+    text-transform: uppercase;
+    color: var(--secondary-txt-cl);
+    margin-bottom: 32px;
+}
+
+.subscribe__title{
+    font-family: var(--main-font);
+    @include fonts(normal, 700, 55px, 120%);
+    text-align: center;
+    color: var(--main-txt-cl);
+    max-width: 769px;
+    margin: 0 auto;
+}
+
+.subscribe__form{
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+}
+
+.subscribe__input{
+    border: none;
+    border-radius: 32px;
+    background: #ffffff;
+    width: 693px;
+    padding: 32px;
+
+    font-family: var(--main-font);
+    @include fonts(normal, 700, 18px, 120%);
+    color:  rgba(25, 24, 37, 0.75);
+    margin-right: 64px;
+}
+
+.subscribe__btn{
+    display: flex;
+    padding: 32px 64px;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+
+    font-family: var(--main-font);
+    @include fonts(normal, 700, 18px, 120%);
+    color:  #ffffff;
+    text-align: center;
+
+    border: none;
+    border-radius: 32px;
+    background: var(--Primary, #5D50C6);
+}
+
+@media only screen and  (max-width: 1024px){
+    .subscribe__title{
+        @include fonts(normal, 700, 40px, 120%);
+    }
+    .subscribe__input{
+        margin-right: 32px;
+    }
+}
