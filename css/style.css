@@ -629,8 +629,22 @@ ul {
   }
 }
 .partners {
+  position: relative;
   padding-top: 64px;
   padding-bottom: 64px;
+}
+
+.partners__svg {
+  position: absolute;
+  left: 38px;
+  bottom: 103px;
+}
+
+.partners__png {
+  position: absolute;
+  right: 0;
+  bottom: -700px;
+  z-index: 1;
 }
 
 .partners__list {
@@ -654,6 +668,9 @@ ul {
     padding-top: 32px;
     padding-bottom: 32px;
   }
+  .partners__svg {
+    display: none;
+  }
 }
 .services {
   padding-top: 64px;
@@ -663,6 +680,10 @@ ul {
 
 .services__container {
   display: flex;
+}
+
+.services__list-wrapper {
+  z-index: 4;
 }
 
 .services__title {
@@ -1351,12 +1372,19 @@ ul {
   }
 }
 .reviews {
+  position: relative;
   padding-top: 64px;
   padding-bottom: 64px;
 }
 
 .reviews__container {
   position: relative;
+}
+
+.reviews__img {
+  position: absolute;
+  top: -350px;
+  width: 100vw;
 }
 
 .reviews__text {
@@ -1390,6 +1418,7 @@ ul {
 }
 
 .reviews__item-avatar {
+  border-radius: 50%;
   margin: 0 auto;
 }
 
@@ -1500,6 +1529,9 @@ ul {
     width: 64px;
     height: 64px;
   }
+  .reviews__img {
+    display: none;
+  }
   .reviews__text {
     font-style: normal;
     font-weight: 700;
@@ -1538,8 +1570,15 @@ ul {
   }
 }
 .subscribe {
+  position: relative;
   padding-top: 109px;
   padding-bottom: 64px;
+}
+
+.subscribe__svg {
+  position: absolute;
+  left: 120px;
+  bottom: 600px;
 }
 
 .subscribe__container {
@@ -1637,6 +1676,9 @@ ul {
 @media only screen and (min-width: 375px) and (max-width: 630px) {
   .subscribe__container {
     padding: 32px;
+  }
+  .subscribe__svg {
+    display: none;
   }
   .subscribe__text {
     font-style: normal;

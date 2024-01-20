@@ -1,6 +1,20 @@
 .partners{
+    position: relative;
     padding-top: 64px;
     padding-bottom: 64px;
+}
+
+.partners__svg{
+    position: absolute;
+    left: 38px;
+    bottom: 103px;
+}
+
+.partners__png{
+    position: absolute;
+    right: 0;
+    bottom: -700px;
+    z-index: 1;
 }
 
 .partners__list{
@@ -26,5 +40,8 @@
         padding-bottom: 32px;
     }
     
+    .partners__svg{
+        display: none;
+    }
 }
 

@@ -8,6 +8,10 @@
     display: flex;
 }
 
+.services__list-wrapper{
+    z-index: 4;
+}
+
 .services__title{
     font-family: var(--main-font);
     @include fonts(normal, 700, 23px, 120%);

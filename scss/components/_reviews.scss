@@ -1,10 +1,17 @@
 .reviews{
+    position: relative;
     padding-top: 64px;
     padding-bottom: 64px;
 }
 
 .reviews__container{
     position: relative;
+}
+
+.reviews__img{
+    position: absolute;
+    top: -350px;
+    width: 100vw;
 }
 
 .reviews__text{
@@ -32,6 +39,7 @@
 }
 
 .reviews__item-avatar{
+    border-radius: 50%;
     margin: 0 auto;
 }
 
@@ -133,6 +141,10 @@
     .reviews__btn{
         width: 64px;
         height: 64px;
+    }
+
+    .reviews__img{
+        display: none;
     }
 
     .reviews__text{

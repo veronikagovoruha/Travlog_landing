@@ -1,6 +1,13 @@
 .subscribe{
+    position: relative;
     padding-top: 109px;
     padding-bottom: 64px;
+}
+
+.subscribe__svg{
+    position: absolute;
+    left: 120px;
+    bottom: 600px;
 }
 
 .subscribe__container{
@@ -90,10 +97,16 @@
     .subscribe__container{
         padding: 32px;
     }
+
+    .subscribe__svg{
+        display: none;
+    }
+
     .subscribe__text{
         @include fonts(normal, 700, 16px, 120%);
         letter-spacing: 3.2px;
     }
+
     .subscribe__title{
         @include fonts(normal, 700, 32px, 120%);
     }
