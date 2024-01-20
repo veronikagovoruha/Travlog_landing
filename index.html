@@ -532,12 +532,21 @@
         </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="footer__container container">
             <div class="footer__left">
-                <a class="header__logo-link" href="">
-                    <img class="header__logo-image" src="" alt="">
-                    <p class="header__logo">Travlog</p>
+                <a class="footer__logo-link" href="">
+                    <svg class="header__logo-image" width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.55273 4.09787C7.12207 5.09823 5.82837 6.28098 4.70532 7.6124C9.29462 7.18633 15.1252 7.88204 21.8944 11.2667C29.123 14.8809 34.9438 15.0031 38.9948 14.2217C38.6272 13.1088 38.1644 12.0392 37.6163 11.0224C32.979 11.5115 27.034 10.8641 20.1056 7.39998C15.706 5.20018 11.8278 4.29401 8.55273 4.09787ZM34.9074 7.16665C31.2453 3.075 25.9234 0.5 20 0.5C18.2605 0.5 16.5727 0.722107 14.9637 1.13948C17.1429 1.73409 19.4579 2.60399 21.8944 3.82227C26.967 6.35853 31.3464 7.17516 34.9074 7.16665ZM39.8609 18.1281C34.9669 19.0945 28.2088 18.896 20.1056 14.8444C12.53 11.0566 6.50043 11.1043 2.4339 12.008C2.224 12.0546 2.01904 12.1036 1.81903 12.1546C1.28662 13.3125 0.861634 14.5301 0.556702 15.7945C0.882386 15.7075 1.21893 15.6248 1.56616 15.5476C6.49957 14.4513 13.4701 14.4989 21.8944 18.7111C29.4701 22.4989 35.4996 22.4512 39.5662 21.5475C39.7055 21.5166 39.8428 21.4846 39.9778 21.4516C39.9926 21.1363 40 20.819 40 20.5C40 19.6975 39.9528 18.906 39.8609 18.1281ZM39.3248 25.6723C34.4783 26.5196 27.917 26.1944 20.1056 22.2888C12.53 18.501 6.50043 18.5487 2.4339 19.4524C1.53125 19.6529 0.719239 19.8972 0.00293 20.1551C0.000977 20.2698 0 20.3848 0 20.5C0 31.5457 8.95429 40.5 20 40.5C29.2571 40.5 37.0453 34.2109 39.3248 25.6723Z" fill="url(#paint0_linear_1156_735)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_1156_735" x1="36" y1="43.7" x2="-3.73321" y2="36.0931" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#5D50C6"/>
+                        <stop offset="1" stop-color="#F85E9F"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+                        
+                    <p class="footer__logo">Travlog</p>
                 </a>
                 <p class="footer__text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.</p>
                 <ul class="footer__left-list">
@@ -567,28 +576,84 @@
                 </ul>
             </div>
             <div class="footer__right">
-                <ul class="company__list">
-                    <li class="company__item"><a class="company__link" href="">About</a></li>
-                    <li class="company__item"><a class="company__link" href="">Career</a></li>
-                    <li class="company__item"><a class="company__link" href="">Mobile</a></li>
+
+                <input class="visually-hidden" type="radio" name="menu" id="company">
+                <input class="visually-hidden" type="radio" name="menu" id="contact">
+                <input class="visually-hidden" type="radio" name="menu" id="meet_us">
+
+                <ul class="list">
+                    <li class="item">
+                        <label class="label" for="company">
+                            <p class="link-title">Company</p>
+                            <img src="" alt="">
+                        </label>
+
+                        <ul class="inner__list">
+                            <li class="footer__item"><a class="link" href="">About</a></li>
+                            <li class="footer__item"><a class="link" href="">Career</a></li>
+                            <li class="footer__item"><a class="link" href="">Mobile</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="item">
+                            <label class="label" for="contact">
+                                <p class="link-title">Contact</p>
+                                <img src="" alt="">
+                            </label>
+
+                        <ul class="inner__list">
+                            <li class="footer__item"><a class="link" href="">Why Travlog?</a></li>
+                            <li class="footer__item"><a class="link" href="">Partner with us</a></li>
+                            <li class="footer__item"><a class="link" href="">FAQ’s</a></li>
+                            <li class="footer__item"><a class="link" href="">FAQ’s</a></li>
+                            <li class="footer__item"><a class="link" href="">Blog</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="item">
+                            <label class="label" for="meet_us">
+                                <p class="link-title">Meet Us</p>
+                                <img src="" alt="">
+                            </label>
+                        <ul class="inner__list">
+                            <li class="footer__item"><a class="link" href="">+00 92 1234 56789</a></li>
+                            <li class="footer__item"><a class="link" href="">info@travlog.com</a></li>
+                            <li class="footer__item"><a class="link" href="">205. R Street, New York</a></li>
+                            <li class="footer__item"><a class="link" href="">BD23200</a></li>
+                        </ul>
+                    </li>
+
+                
+
+                
+
+
+
+                <!-- <ul class="list">
+                    <li class="item"><a class="link-title" href="">Company</a></li>
+                    <li class="item"><a class="link" href="">About</a></li>
+                    <li class="item"><a class="link" href="">Career</a></li>
+                    <li class="item"><a class="link" href="">Mobile</a></li>
                 </ul>
 
-                <ul class="contact__list">
-                    <li class="contact__item"><a class="contact__link" href="">Why Travlog?</a></li>
-                    <li class="contact__item"><a class="contact__link" href="">Partner with us</a></li>
-                    <li class="contact__item"><a class="contact__link" href="">FAQ’s</a></li>
-                    <li class="contact__item"><a class="contact__link" href="">Blog</a></li>
+                <ul class="list">
+                    <li class="item"><a class="link-title" href="">Contact</a></li>
+                    <li class="item"><a class="link" href="">Why Travlog?</a></li>
+                    <li class="item"><a class="link" href="">Partner with us</a></li>
+                    <li class="item"><a class="link" href="">FAQ’s</a></li>
+                    <li class="item"><a class="link" href="">Blog</a></li>
                 </ul>
 
-                <ul class="meet__list">
-                    <li class="meet__item"><a class="meet__link" href="">+00 92 1234 56789</a></li>
-                    <li class="meet__item"><a class="meet__link" href="">info@travlog.com</a></li>
-                    <li class="meet__item"><a class="meet__link" href="">205. R Street, New York</a></li>
-                    <li class="meet__item"><a class="meet__link" href="">BD23200</a></li>
-                </ul>
+                <ul class="list">
+                    <li class="item"><a class="link-title" href="">Meet Us</a></li>
+                    <li class="item"><a class="link" href="">+00 92 1234 56789</a></li>
+                    <li class="item"><a class="link" href="">info@travlog.com</a></li>
+                    <li class="item"><a class="link" href="">205. R Street, New York</a></li>
+                    <li class="item"><a class="link" href="">BD23200</a></li>
+                </ul> -->
             </div>
         </div>
-    </footer> -->
+    </footer>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

@@ -28,25 +28,18 @@ ul{
   margin: 0;
 }
 
-.title{
-  font-family: var(--main-font);
-  @include fonts(normal, 700, 44px, 1.19);
-  color: var(--main-txt-cl);
-  // margin-bottom: 20px;
-  text-align: center;
-}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-.btn{
-  min-width: 157px;
-  max-width: 188px;
-  padding: 13px 22px;
-
-  font-family: var(--title-font);
-//   @include fonts(normal, 600, 12px, 1.66);
-  text-transform: uppercase;
-  cursor: pointer;
-
-  transition: color var(--transition-fast), background-color var(--transition-fast);
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 834px){
