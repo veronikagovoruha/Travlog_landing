@@ -72,4 +72,44 @@
     .subscribe__input{
         margin-right: 32px;
     }
+
+    .subscribe{
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+}
+
+@media only screen and  (max-width: 768px){
+    .subscribe{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media only screen and  (min-width: 375px) and (max-width: 630px){
+    .subscribe__container{
+        padding: 32px;
+    }
+    .subscribe__text{
+        @include fonts(normal, 700, 16px, 120%);
+        letter-spacing: 3.2px;
+    }
+    .subscribe__title{
+        @include fonts(normal, 700, 32px, 120%);
+    }
+
+    .subscribe__form{
+        flex-direction: column;
+    }
+
+    .subscribe__input{
+        padding: 24px 32px;
+        margin-bottom: 32px;
+        margin-right: 0;
+        width: unset;
+    }
+
+    .subscribe__btn{
+        display: inline-block;
+    }
 }
